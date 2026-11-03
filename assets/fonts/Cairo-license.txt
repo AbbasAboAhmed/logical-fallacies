@@ -1,0 +1,13 @@
+Cairo Variable font
+Local file: Cairo-Variable.ttf
+Embedded copyright and license notices:
+
+Copyright 2009 The Cairo Project Authors (https://github.com/Gue3bara/Cairo)
+
+Kief Type Foundry, Accademia di Belle Arti di Urbino
+
+Mohamed Gaber, Accademia di Belle Arti di Urbino
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+http://scripts.sil.org/OFL
