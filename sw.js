@@ -1,9 +1,13 @@
 /* Regenerate the cache version whenever site assets change. */
-const CACHE='fallacies-v3-fb4d23b4c477';
+const CACHE='fallacies-v5-f58247a97b24';
 const ASSETS=[
   "./",
   "./.nojekyll",
   "./assets/app.js",
+  "./assets/blocks.js",
+  "./assets/glossary.js",
+  "./assets/round5.css",
+  "./assets/playback.js",
   "./assets/favicon.svg",
   "./assets/fonts/Cairo-license.txt",
   "./assets/fonts/Cairo-Variable.ttf",
@@ -68,7 +72,7 @@ const ASSETS=[
   "./site-config.js"
 ];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('fallacies-v3-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>/^fallacies-v[345]-/.test(key)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
  if(event.request.method!=='GET')return;
  const url=new URL(event.request.url),scope=new URL(self.registration.scope);
