@@ -1,5 +1,5 @@
 /* Regenerate the cache version whenever site assets change. */
-const CACHE='fallacies-v5-f58247a97b24';
+const CACHE='fallacies-v6-icon';
 const ASSETS=[
   "./",
   "./.nojekyll",
@@ -12,7 +12,7 @@ const ASSETS=[
   "./assets/fonts/Cairo-license.txt",
   "./assets/fonts/Cairo-Variable.ttf",
   "./assets/icon-192.png",
-  "./assets/icon-512.png",
+  "./assets/icon-512.png",'assets/icon-maskable-512.png','assets/apple-touch-icon.png',
   "./assets/og.html",
   "./assets/og.png",
   "./assets/reader.css",
