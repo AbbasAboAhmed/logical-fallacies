@@ -1,9 +1,9 @@
 /* Regenerate the cache version whenever site assets change. */
-const CACHE='fallacies-v8-hindawi';
+const CACHE='fallacies-v9';
 const ASSETS=[
   "./",
   "./.nojekyll",
-  "./assets/app.js",'assets/flow.js','assets/analytics.js',
+  "./assets/app.js",'assets/flow.js',
   "./assets/blocks.js",
   "./assets/glossary.js",
   "./assets/round5.css",
